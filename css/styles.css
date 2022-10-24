@@ -297,8 +297,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius  : 50%;
-    transition: background-color 250ms var(--timing-function), 
-    fill 250ms var(--timing-function);
+    transition:  background-color 250ms var(--timing-function);
 }
 .social-net {
     display: flex;
@@ -308,6 +307,7 @@ header {
 }
 .net-icon {
     fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
 }
 .net-link:hover > .net-icon,
 .net-link:focus > .net-icon {
@@ -337,15 +337,14 @@ header {
     border: 1px solid #AFB1B8;
     display: flex;
     border-radius: 4px;
-    display: flex;
     justify-content: center;
     align-items: center;
     fill: #AFB1B8;
-    transition: border-color 250ms var(--timing-function), 
-    fill  250ms var(--timing-function);
+    transition: border-color 250ms var(--timing-function);
 }
 .cliens-icon {
     fill: currentColor;
+    transition: fill 250ms var(--timing-function);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -353,6 +352,7 @@ header {
 }
 .clients-link:hover .clients-icon{
     fill: var(--color-accent);
+    transition: fill 250ms var(--timing-function);
 }
 .footer-conainer {
     align-items: center;
@@ -444,10 +444,6 @@ header {
 .subscription-link:focus {
     background-color: var(--color-accent);
 }
-.subscription-link:hover .subscription-icon{
-    fill: #fff;
-}
-
 /*css portfolio*/
 
 .filter-portfolio {
@@ -469,7 +465,7 @@ header {
     border: none;
     padding: 6px 22px;
     line-height: 1.62;
-    transition: color 250ms, background-color 250ms;
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .filters:hover {
     color: var(--color-white);
